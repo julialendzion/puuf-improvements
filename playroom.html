@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="circular furniture, PUUF design studio" />
+    <meta name="description" content="PUUF is a circular furniture design studio" />
+
+    <link rel="stylesheet" href="./style.scss" />
+    <link rel="icon" type="image/png" sizes="36x36" href="./img/puuf-logo.png" />
+
+    <title>PUUF studio</title>
+  </head>
+  <body id="playroom">
+    <header id="menu-nav">
+      <a href="home.html"><img class="logo" src="./img-home/puuf logo.svg" alt="logo" /></a>
+      <section id="menuSec">
+        <nav>
+          <div class="menuTop">
+            <div class="closeMenu">MENU</div>
+          </div>
+          <div class="menuOptions">
+            <a href="./productlist.html">Shop</a>
+            <a href="./about-timeline.html">About</a>
+            <a href="./services.html">Services</a>
+            <a href="#">Circularity</a>
+          </div>
+          <div class="menuBottom">
+            <div class="left">
+              <a href="#">Privacy Policy</a>
+              <a href="#">T&C</a>
+              <a href="#">FAQ</a>
+              <a href="about-timeline.html#contact-info">Contact</a>
+            </div>
+            <div class="social-media-menu">
+              <li>
+                <a href="https://www.instagram.com/puuf.studio/"><img src="./icons/instagram.png" alt="instagram icon" /></a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/company/puuf/"><img src="./icons/linkedin.png" alt="linkedin icon" /></a>
+              </li>
+            </div>
+          </div>
+        </nav>
+        <div class="navOptions">
+          <div><a href="shoppingBag.html">CART</a></div>
+          <div class="openMenu">MENU</div>
+        </div>
+      </section>
+    </header>
+    <main>
+      <div id="intro-section">
+        <h2>
+          Arrange your PUUF
+          <span class="oval"
+            ><svg xmlns="http://www.w3.org/2000/svg" width="439.444" height="209.465" viewBox="0 0 439.444 209.465">
+              <g id="Ellipse_112" data-name="Ellipse 112" transform="matrix(0.978, -0.208, 0.208, 0.978, 0, 87.915)" fill="none" stroke="#cb76ec" stroke-width="5.5">
+                <ellipse cx="211.424" cy="62.133" rx="211.424" ry="62.133" stroke="none" />
+                <ellipse cx="211.424" cy="62.133" rx="209.424" ry="60.133" fill="none" />
+              </g>
+            </svg>
+          </span>
+          room
+        </h2>
+        <p>Move the stuff around and make your own PUUFaverse. Get immersed in our world!</p>
+      </div>
+      <div id="outerContainer">
+        <div id="container">
+          <div class="item one"></div>
+          <div class="item two"></div>
+          <div class="item three"></div>
+          <div class="item four"></div>
+        </div>
+        <br />
+      </div>
+    </main>
+    <footer>
+      <section id="top-footer">
+        <div class="newsletter">
+          <img class="white-logo" alt="white logo" src="./img/puuf-white-logo.png" />
+          <h4>Keep in touch with our furniture, sustainability and other tips</h4>
+          <div class="formContainer">
+            <div class="container">
+              <form class="newsletterForm" name="Newsletter">
+                <input class="emailField" id="email" type="email" placeholder="Your e-mail" required />
+                <button type="submit" name="newsletter-button" aria-label="Submit"></button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <a>
+          <div class="spinning-img hidden">
+            <img class="social-image" alt="social" src="./img/social-image.png" />
+            <img class="social-text" alt="social" src="./img/social-text.png" />
+          </div>
+        </a>
+      </section>
+      <section id="bottom-footer">
+        <p>© 2022 - PUUF</p>
+        <ul class="footer-details">
+          <ul class="social-media">
+            <li>
+              <a href="https://www.instagram.com/puuf.studio/"><img src="./icons/instagram.png" alt="instagram icons" /></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/company/puuf/"><img src="./icons/linkedin.png" alt="linkedin icon" /></a>
+            </li>
+          </ul>
+          <li>Privacy Policy</li>
+          <li>T&Cs</li>
+          <li>FAQ</li>
+          <li><a href="about-timeline.html#contact-info">Contact</a></li>
+        </ul>
+      </section>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+    <script type="module" src="./script/main.js"></script>
+    <script type="module" src="./script/home/home-gsap.js"></script>
+    <script type="module" src="./script/home/logo-ani.js"></script>
+    <script type="module" src="./script/home/home-products.js"></script>
+    <script type="module" src="./script/playroom.js"></script>
+  </body>
+</html>

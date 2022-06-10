@@ -1,0 +1,98 @@
+@use "../base/typography";
+#playroom {
+  #intro-section {
+    margin-top: 10rem;
+
+    h2 {
+      margin-bottom: 0.5rem;
+    }
+
+    .oval {
+      position: absolute;
+      top: 12%;
+      left: 30rem;
+      z-index: -1;
+      svg {
+        max-width: 60%;
+      }
+    }
+  }
+  #outerContainer {
+    background-image: url("../img/render-two.png");
+    height: 100vh;
+    width: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    #container {
+      width: auto;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      border-radius: 7px;
+      touch-action: none;
+    }
+
+    .item {
+      border-radius: 50%;
+      touch-action: none;
+      user-select: none;
+      position: relative;
+    }
+
+    .one {
+      background-image: url(./img/gunnii.png);
+      width: 20rem;
+      height: 30rem;
+      top: 0%;
+      left: 0%;
+      background-size: cover;
+      opacity: 80%;
+    }
+
+    .two {
+      background-image: url(./img/vase-png.png);
+      width: 8vw;
+      height: 20vh;
+      top: 0px;
+      left: 0px;
+      background-size: cover;
+      opacity: 90%;
+    }
+
+    .three {
+      background-image: url(./img/fragrans.png);
+      width: 25vw;
+      height: 45vh;
+      top: 0px;
+      left: 0px;
+      background-size: cover;
+      opacity: 90%;
+    }
+
+    .four {
+      background-image: url(./img/puuf-box.png);
+      width: 25vw;
+      height: 40vh;
+      top: 0px;
+      left: 0px;
+      background-size: cover;
+      opacity: 90%;
+    }
+
+    .item:active {
+      opacity: 0.75;
+    }
+
+    .item:hover {
+      cursor: pointer;
+    }
+
+    h1 {
+      margin-bottom: 10px;
+    }
+  }
+}

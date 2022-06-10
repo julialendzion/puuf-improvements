@@ -37,8 +37,8 @@ function handleProducts(products) {
   document.querySelector(".product-description-all h2").textContent = products.name;
   document.querySelector(".price span").textContent = products.price;
   document.querySelector(".product-description").textContent = products.description;
-  document.querySelector(".list li").textContent = products.material;
-  document.querySelector(".list2 li").textContent = products.measurements;
+  document.querySelector(".dropdown-list .material").textContent = products.material;
+  document.querySelector(".dropdown-list .measure").textContent = products.measurements;
   document.querySelector(".use span").textContent = products.useproposal;
   document.querySelector(".designer span").textContent = products.designer;
   document.querySelector(".production span").textContent = products.production;
@@ -53,6 +53,21 @@ function handleProducts(products) {
   document.querySelector(".addCart").addEventListener("click", () => {
     CART.add(products);
   });
+
+  let acc = document.getElementsByClassName("type");
+  let i;
+
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function () {
+      this.classList.toggle("active");
+      let panel = this.nextElementSibling;
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+    });
+  }
 
   /* ADD TO CART BUTTON */
   const cartButton = document.querySelector(".cart-button");
