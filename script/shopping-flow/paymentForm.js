@@ -20,6 +20,15 @@ const handleSubmit = (e) => {
     .catch((error) => alert(error));
 };
 
+document.querySelector("#cardMethod").addEventListener("click", radioCheck);
+
+function radioCheck() {
+  document.getElementById("cardNumber").required = radio.checked;
+  document.getElementById("month").required = radio.checked;
+  document.getElementById("year").required = radio.checked;
+  document.getElementById("nameCard").required = radio.checked;
+  document.getElementById("CVV").required = radio.checked;
+}
 form.addEventListener("submit", handleSubmit);
 
 document.getElementById("cardSection").style.display = "none";
