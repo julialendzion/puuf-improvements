@@ -61,6 +61,14 @@ hr {
   display: none;
 }
 
+.active .plus {
+  display: none;
+}
+
+.active .minus {
+  display: inline-block;
+}
+
 .about-timeline {
   .dropdown > .dropdownList:hover .list {
     height: 48vw;

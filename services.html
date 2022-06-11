@@ -135,7 +135,14 @@
                 <input type="email" id="email" name="email" placeholder=" " required />
               </div>
 
-              <div class="grouping">
+              <div class="grouping bullets">
+                <label for="repair">Repair</label>
+                <input type="radio" id="repair" name="repair" />
+                <label for="cutomOrder">Customised order</label>
+                <input type="radio" id="cutomOrder" name="repair" />
+              </div>
+
+              <div id="customOrderField" class="grouping hidden">
                 <label for="message">Your message</label>
                 <textarea id="message" name="message" rows="6" minlength="2" placeholder=" " required> </textarea>
               </div>

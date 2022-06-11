@@ -138,6 +138,23 @@
   }
 }
 
+.services-page {
+  #part4,
+  #part4-services {
+    .form-styling {
+      .hidden {
+        display: none;
+      }
+      .bullets label {
+        display: inline;
+      }
+      input[type="bullet"] {
+        display: inline;
+      }
+    }
+  }
+}
+
 @media only screen and (min-width: 760px) {
   .about-timeline,
   .services-page {

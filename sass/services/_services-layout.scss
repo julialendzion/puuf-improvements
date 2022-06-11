@@ -45,11 +45,13 @@
         line-height: 20px; //usunac
       }
       #phone-nr {
+        margin-top: 50px;
         div {
           display: flex;
           justify-items: center;
           gap: 12px;
           margin-bottom: 3vw;
+
           // margin-bottom: 1.2vw;
 
           svg {

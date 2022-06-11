@@ -31,3 +31,9 @@ form.addEventListener("submit", handleSubmit);
 function removeMessege() {
   document.querySelector("#confirmation-text").classList.add("hidden");
 }
+
+document.querySelector("#cutomOrder").addEventListener("click", showTextField);
+
+function showTextField() {
+  document.getElementById("customOrderField").style.display = "block";
+}
