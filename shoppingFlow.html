@@ -176,47 +176,48 @@
                   </div>
                   <div class="methodOptions">
                     <input type="radio" id="cardMethod" name="payment" />
-                    <label for="cardMethod">CREDIT/DEBIT CARD</label>
+                    <label for="cardMethod" class="none">CREDIT/DEBIT CARD</label>
                   </div>
+                  <div id="cardSection">
+                    <label for="cardNumber">Card number</label>
+                    <input type="text" name="cardNumber" id="cardNumber" minlength="16" maxlength="16" required placeholder=" " />
+                    <p class="error-card">Card number should be 16 digits long</p>
 
-                  <label for="cardNumber">Card number</label>
-                  <input type="text" name="cardNumber" id="cardNumber" minlength="16" maxlength="16" required placeholder=" " />
-                  <p class="error-card">Card number should be 16 digits long</p>
+                    <label for="monthdate"
+                      >Expiry date <br />
+                      <select name="month" id="month" required>
+                        <option>Month</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                      </select>
+                      <select name="year" id="year">
+                        <option>Year</option>
+                        <option>2021</option>
+                        <option>2022</option>
+                        <option>2023</option>
+                        <option>2024</option>
+                        <option>2025</option>
+                        <option>2026</option>
+                      </select>
+                    </label>
 
-                  <label for="monthdate"
-                    >Expiry date <br />
-                    <select name="month" id="month" required>
-                      <option>Month</option>
-                      <option>1</option>
-                      <option>2</option>
-                      <option>3</option>
-                      <option>4</option>
-                      <option>5</option>
-                      <option>6</option>
-                      <option>7</option>
-                      <option>8</option>
-                      <option>9</option>
-                      <option>10</option>
-                      <option>11</option>
-                      <option>12</option>
-                    </select>
-                    <select name="year" id="year">
-                      <option>Year</option>
-                      <option>2021</option>
-                      <option>2022</option>
-                      <option>2023</option>
-                      <option>2024</option>
-                      <option>2025</option>
-                      <option>2026</option>
-                    </select>
-                  </label>
+                    <label for="nameCard">Name on card</label>
+                    <input type="text" name="nameCard" id="nameCard" minlength="5" placeholder=" " required />
 
-                  <label for="nameCard">Name on card</label>
-                  <input type="text" name="nameCard" id="nameCard" minlength="5" placeholder=" " required />
-
-                  <label for="CVV">CVV</label>
-                  <input type="password" name="CVV" id="CVV" minlength="3" maxlength="3" placeholder=" " required />
-                  <p class="error-cvv">3 digits in the back of your card</p>
+                    <label for="CVV">CVV</label>
+                    <input type="password" name="CVV" id="CVV" minlength="3" maxlength="3" placeholder=" " required />
+                    <p class="error-cvv">3 digits in the back of your card</p>
+                  </div>
                 </div>
               </div>
               <a href="orderConfirmation.html"><button type="submit" class="regular-button" id="place-order" name="place-order">PLACE ORDER</button></a>

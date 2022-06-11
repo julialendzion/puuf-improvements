@@ -22,6 +22,20 @@ const handleSubmit = (e) => {
 
 form.addEventListener("submit", handleSubmit);
 
+document.getElementById("cardSection").style.display = "none";
+
+document.querySelector("#cardMethod").addEventListener("click", show);
+document.querySelector("#mobilepayMethod").addEventListener("click", show1);
+document.querySelector("#paypayMethod").addEventListener("click", show1);
+
+function show() {
+  document.getElementById("cardSection").style.display = "block";
+}
+
+function show1() {
+  document.getElementById("cardSection").style.display = "none";
+}
+
 // function removeMessege() {
 //   document.querySelector("#confirmation-text").classList.add("hidden");
 // }
