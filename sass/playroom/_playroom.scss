@@ -1,15 +1,17 @@
 @use "../base/typography";
 #playroom {
+  #message {
+    display: none;
+  }
   #intro-section {
-    margin-top: 10rem;
-
+    margin: 6rem 1rem 2rem;
     h2 {
       margin-bottom: 0.5rem;
     }
 
     .oval {
       position: absolute;
-      top: 12%;
+      top: 4%;
       left: 30rem;
       z-index: -1;
       svg {
@@ -93,6 +95,21 @@
 
     h1 {
       margin-bottom: 10px;
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  #playroom {
+    #outerContainer {
+      display: none;
+    }
+    #intro-section {
+      display: none;
+    }
+
+    #message {
+      display: block;
     }
   }
 }
