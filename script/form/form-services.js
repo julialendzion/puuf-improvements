@@ -33,7 +33,13 @@ function removeMessege() {
 }
 
 document.querySelector("#cutomOrder").addEventListener("click", showTextField);
+document.querySelector("#repair").addEventListener("click", hideTextField);
 
 function showTextField() {
   document.getElementById("customOrderField").style.display = "block";
+  document.getElementById("customOrderField").style.opacity = "100%";
+}
+
+function hideTextField() {
+  document.getElementById("customOrderField").style.display = "none";
 }
