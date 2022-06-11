@@ -14,6 +14,7 @@ module.exports = {
         shoppingbag: resolve(__dirname, "shoppingBag.html"),
         shoppingflow: resolve(__dirname, "shoppingFlow.html"),
         services: resolve(__dirname, "services.html"),
+        playroom: resolve(__dirname, "playroom.html"),
       },
     },
   },
