@@ -142,6 +142,48 @@
   #part4,
   #part4-services {
     .form-styling {
+      input[type="radio"] {
+        /* Add if not using autoprefixer */
+        -webkit-appearance: none;
+        /* Remove most all native input styles */
+        appearance: none;
+        /* For iOS < 15 */
+        background-color: white;
+        /* Not removed via appearance */
+        margin: 0;
+        display: inline;
+
+        font: inherit;
+        color: colors.$purple-2;
+        width: 1.15em;
+        height: 1.15em;
+        border: 1px solid colors.$purple-2;
+        border-radius: 50%;
+        transform: translateY(-0.075em);
+
+        display: inline-grid;
+        place-content: center;
+      }
+
+      input[type="radio"]::before {
+        content: "";
+        width: 0.65em;
+        height: 0.65em;
+        border-radius: 50%;
+        transform: scale(0);
+        transition: 120ms transform ease-in-out;
+        box-shadow: inset 1em 1em colors.$purple-3;
+        /* Windows High Contrast Mode */
+        background-color: CanvasText;
+      }
+
+      input[type="radio"]:checked::before {
+        transform: scale(1);
+      }
+
+      input[type="radio"]:focus {
+        outline: solid colors.$purple-3;
+      }
       .hidden {
         display: none;
       }
