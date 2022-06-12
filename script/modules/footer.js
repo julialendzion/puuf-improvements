@@ -1,3 +1,4 @@
+const form = document.querySelector(".newsletterForm");
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   console.log(form.elements.email.value);
