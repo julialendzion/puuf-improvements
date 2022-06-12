@@ -141,7 +141,24 @@
                 <label for="cutomOrder">Customised order</label>
                 <input type="radio" id="cutomOrder" name="repair" />
               </div>
+              <div id="RepairSection" class="hidden">
+                <div>
+                  <label for="product">What product do you need to repair?</label>
+                  <select name="product" id="product" required>
+                    <option>Puuf Box</option>
+                    <option>Mini Gunnii</option>
+                    <option>Gunnii</option>
+                    <option>Fragrans</option>
+                    <option>Sigmunt Vase</option>
+                    <option>Microspora</option>
+                  </select>
+                </div>
 
+                <div id="repairText" class="grouping">
+                  <label for="messageRepair">Tell as a bit more about what needs a repair</label>
+                  <textarea id="messageRepair" name="messageRepair" rows="6" minlength="2" placeholder=" " required> </textarea>
+                </div>
+              </div>
               <div id="customOrderField" class="grouping hidden">
                 <label for="message">Your message</label>
                 <textarea id="message" name="message" rows="6" minlength="2" placeholder=" " required> </textarea>

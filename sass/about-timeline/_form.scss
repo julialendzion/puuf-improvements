@@ -148,9 +148,28 @@
       .bullets label {
         display: inline;
       }
+      .bullets {
+        margin-bottom: 20px;
+      }
       input[type="bullet"] {
         display: inline;
+        width: 20px;
       }
+    }
+    select {
+      padding: 10px 20px;
+      margin-bottom: 10px;
+      border-radius: 20px;
+      border: solid 1px colors.$purple-2;
+    }
+    #RepairSection {
+      margin-top: 20px;
+      #repairText {
+        margin-top: 15px;
+      }
+    }
+    #customOrderField {
+      margin-top: 20px;
     }
   }
 }

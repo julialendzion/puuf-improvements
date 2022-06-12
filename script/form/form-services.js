@@ -38,8 +38,10 @@ document.querySelector("#repair").addEventListener("click", hideTextField);
 function showTextField() {
   document.getElementById("customOrderField").style.display = "block";
   document.getElementById("customOrderField").style.opacity = "100%";
+  document.querySelector("#RepairSection").classList.add("hidden");
 }
 
 function hideTextField() {
   document.getElementById("customOrderField").style.display = "none";
+  document.querySelector("#RepairSection").classList.remove("hidden");
 }
