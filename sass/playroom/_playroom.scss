@@ -40,50 +40,47 @@
     }
 
     .item {
-      border-radius: 50%;
       touch-action: none;
       user-select: none;
       position: relative;
+      background-position: center;
+      opacity: 90%;
     }
 
     .one {
       background-image: url(../img/gunnii.png);
-      width: 20rem;
-      height: 30rem;
+      width: 15rem;
+      height: 25rem;
       top: 0px;
       left: 0px;
       background-size: cover;
-      opacity: 80%;
     }
 
     .two {
       background-image: url(../img/vase-png.png);
-      width: 8vw;
-      height: 20vh;
+      width: 4rem;
+      height: 7rem;
       top: 0px;
       left: 0px;
       background-size: cover;
-      opacity: 90%;
     }
 
     .three {
       background-image: url(../img/fragrans.png);
-      width: 25vw;
-      height: 45vh;
+      width: 13rem;
+      height: 25rem;
       top: 0px;
       left: 0px;
       background-size: cover;
-      opacity: 90%;
     }
 
     .four {
       background-image: url(../img/puuf-box.png);
-      width: 25vw;
-      height: 40vh;
+      width: 12rem;
+      height: 22rem;
       top: 0px;
       left: 0px;
       background-size: cover;
-      opacity: 90%;
     }
 
     .item:active {

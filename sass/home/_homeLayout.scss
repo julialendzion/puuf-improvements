@@ -150,6 +150,12 @@
       width: 60px;
       margin-top: 5vw;
     }
+
+    .circularityBtn {
+      position: absolute;
+      right: 50px;
+      margin-top: 34.5rem;
+    }
   }
 
   #section4 {
@@ -187,8 +193,11 @@
         width: 55vw;
         margin-right: 2vw;
         margin-bottom: 1rem;
+        transition: all 0.2s ease-in-out;
         img {
           max-width: 100%;
+          outline: solid 2px white;
+          transition: outline 0.2s ease-in-out;
         }
       }
       article:hover {
