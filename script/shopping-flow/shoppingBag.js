@@ -10,57 +10,6 @@ const CART = {
       // if there's anything there, turn it into 20 objects that we can access with the dot . notation
       CART.contents = JSON.parse(_contents);
     } else {
-      /*CART.contents = [
-          {
-            _id: "608187eb3e28515100031d8f",
-            qty: 5,
-            collection: "",
-            colour: "Blue",
-            description:
-              "Ulrikke Woven Satin is a new shoulder bag with a shiny twist",
-            dimensions: "Dimensions: 30 x 6 x 20 cm.",
-            material: "Material: 100 % Polyester",
-            name: "ULRIKKE WOVEN SATIN",
-            newProducts: true,
-            outOfStock: false,
-            photo:
-              "https://anasofich.github.io/SILFEN-website/photos/ulrike-woven-satin-blue.jpg",
-            photoOne:
-              "https://anasofich.github.io/SILFEN-website/photos/urlike-woven-satin-blue-top.jpg",
-            photoThree: "",
-            photoTwo:
-              "https://anasofich.github.io/SILFEN-website/photos/urlike-woven-statin-blue-side.jpg",
-            price: 499,
-            sale: false,
-            salePrice: "",
-            typeOfTheBag: "BumbagsandCrossbodybags",
-          },
-          {
-            _id: "608188303e28515100031d9a",
-            qty: 3,
-            collection: "",
-            colour: "Beige",
-            description:
-              "Ulrikke Woven Satin is a new crossbody bag with a shiny twist",
-            dimensions: "Dimensions: 30 x 6 x 20 cm.",
-            material: "Material: 100 % Polyester",
-            name: "ULRIKKE WOVEN SATIN",
-            newProducts: true,
-            outOfStock: false,
-            photo:
-              "https://anasofich.github.io/SILFEN-website/photos/ulrike-woven-satin-beige.jpg",
-            photoOne:
-              "https://anasofich.github.io/SILFEN-website/photos/urlike-woven-satin-beige-side.jpg",
-            photoThree:
-              "https://anasofich.github.io/SILFEN-website/photos/urlike-woven-satin-model.jpg",
-            photoTwo:
-              "https://anasofich.github.io/SILFEN-website/photos/urlike-woven-satin-beige-top.jpg",
-            price: 499,
-            sale: false,
-            salePrice: "",
-            typeOfTheBag: "BumbagsandCrossbodybags",
-          },
-        ];*/
     }
     // I want to update the
     //this.updateDOM(); use this when we're not hardcoding the contents, and the content is read from localStorage
@@ -119,6 +68,9 @@ const CART = {
 
         itemCopy.querySelector("img").src = element.photoOne;
         itemCopy.querySelector(".bagproductPrice").textContent = element.price * element.qty + "dkk";
+
+        let itemTotalPrice = element.price * element.qty;
+        console.log("totalPrice", itemTotalPrice);
 
         cartcontentEl.appendChild(itemCopy);
       });

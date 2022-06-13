@@ -32,6 +32,17 @@
     }
   }
 
+  .cartNav.items ::after {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 65px;
+    width: 13px;
+    height: 13px;
+    border-radius: 100%;
+    background-color: rgb(237, 181, 255);
+  }
+
   .closeMenu {
     position: absolute;
     top: 20px;
