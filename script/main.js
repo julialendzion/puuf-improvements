@@ -80,7 +80,7 @@ let cartItems = CART.contents;
 let cartLenght = cartItems.length;
 
 if (cartLenght === 0) {
-  document.querySelector(".cartNav").classList.remove("items");
+  document.querySelector(".cartNav").classList.remove("activeCart");
 } else if (cartLenght >= 1) {
-  document.querySelector(".cartNav").classList.add("items");
+  document.querySelector(".cartNav").classList.add("activeCart");
 }

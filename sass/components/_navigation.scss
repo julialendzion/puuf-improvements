@@ -32,7 +32,7 @@
     }
   }
 
-  .cartNav.items ::after {
+  .cartNav.activeCart ::after {
     content: "";
     position: absolute;
     top: -5px;
