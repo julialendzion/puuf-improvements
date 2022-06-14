@@ -261,11 +261,11 @@ footer {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      .p {
-        font-size: 0.8rem;
+      p {
+        font-size: 1rem;
       }
       .footer-details {
-        font-size: 1.2rem;
+        font-size: 0.8rem;
         li {
           padding: 0.3rem;
           line-height: 10px;
