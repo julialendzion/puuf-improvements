@@ -2,22 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="keywords" content="circular furniture, PUUF design studio" />
-    <meta name="description" content="PUUF is a circular furniture design studio" />
+    <title>Circularity</title>
     <link rel="stylesheet" href="./style.scss" />
     <link rel="icon" type="image/png" sizes="36x36" href="./img/puuf-logo.png" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <title>Product</title>
   </head>
-  <body id="productView">
+  <body id="circularity-page">
     <header id="menu-nav">
       <a href="home.html"><img class="logo" src="./img-home/puuf logo.svg" alt="logo" /></a>
       <section id="menuSec">
@@ -29,7 +19,7 @@
             <a href="./productlist.html">Shop</a>
             <a href="./about-timeline.html">About</a>
             <a href="./services.html">Services</a>
-            <a href="./circularity.html">Circularity</a>
+            <a href="#">Circularity</a>
           </div>
           <div class="menuBottom">
             <div class="left">
@@ -55,72 +45,21 @@
         </div>
       </section>
     </header>
-    <div class="preloader"></div>
-    <div class="preloader-img">
-      <img src="./img-home/puuf logo.svg" alt="logo" />
-    </div>
-    <main>
-      <section class="product-tile">
-        <h2 class="hidden"></h2>
-        <img class="hidden" src="./img/pink-shape.png" alt="pink shape" />
-      </section>
-      <div class="product-pics">
-        <img class="first" src="" alt="" />
-        <img class="second" src="" alt="" />
-        <img class="third" src="" alt="" />
-      </div>
-      <section class="product-description-all">
-        <ol class="breadcrumbs">
-          <li><a href="productlist.html"> SHOP</a></li>
-          <li>&nbsp;> &nbsp;</li>
-          <li class="name"></li>
-        </ol>
-        <h2 class="hide"></h2>
-
-        <h3 class="price"><span></span>kr</h3>
-        <p class="product-description"><br /><br /></p>
-        <h4 class="type">MATERIAL <span class="plus">+</span> <span class="minus">-</span> <i class="arrow down"></i></h4>
-        <div class="dropdown-list">
-          <p class="material">recycled plastic whatever</p>
-        </div>
-
-        <h4 class="type">MEASUREMENTS<span class="plus">+</span> <span class="minus">-</span> <i class="arrow down"></i></h4>
-
-        <div class="dropdown-list">
-          <p class="measure">343x23432x23423</p>
-        </div>
-
-        <h4 class="type">OTHER DETAILS<span class="plus">+</span> <span class="minus">-</span> <i class="arrow down"></i></h4>
-
-        <div class="dropdown-list">
-          <ul class="list">
-            <li class="use">Use proposal: <span>E</span></li>
-            <li class="designer">Designer: <span></span></li>
-            <li class="production">Production: <span></span></li>
-          </ul>
-        </div>
-
-        <div class="addToCartBtn">
-          <button class="cart-button addCart" name="add-cart">
-            <span class="add-to-cart">Add to cart</span>
-            <span class="added">Added!</span>
-            <i class="fas fa-shopping-cart"></i>
-            <i class="fas fa-box"></i>
-          </button>
+    <main id="part1-circular">
+      <section id="intro-services">
+        <h2 id="about">CIRCULARITY</h2>
+        <div>
+          <h3>Round & round it goes!</h3>
+          <p>
+            It’s one thing to simply identify a problem, and another thing to actively engage with it. Since we started PUUF back in 2017 we have
+            always sought to experiment with circularity and sustainability. Understanding it, educating ourselves and others on it with the aim to
+            implement it into all our processes, and throughout. Working sustainably has become our passion, our focus and strategy and is based on 4
+            pillars.
+          </p>
         </div>
       </section>
+      <section></section>
     </main>
-
-    <section class="vrSection">
-      <video playsinline autoplay muted loop src="../videos/vrVideo.mov" alt="video"></video>
-      <div class="videoText">
-        <h2>
-          Experience the <br />
-          Playroom <span class="wavy"><a target="_blank" href="playroom.html">here</a></span>
-        </h2>
-      </div>
-    </section>
-
     <footer>
       <section id="top-footer">
         <div class="newsletter">
@@ -161,9 +100,6 @@
         </ul>
       </section>
     </footer>
-
-    <script type="module" src="/productview.js"></script>
     <script type="module" src="./script/main.js"></script>
-    <script type="module" src="./script//modules/footer.js"></script>
   </body>
 </html>
