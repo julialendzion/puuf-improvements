@@ -3,7 +3,7 @@
     padding: 0 30px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 30px;
+    column-gap: 50px;
     padding-right: 65px;
     text-align: left;
     margin-top: 100px;
@@ -21,6 +21,38 @@
       p {
         font-size: unset;
         line-height: unset;
+      }
+    }
+
+    #icons-circular {
+      img {
+        width: 13rem;
+        height: auto;
+        padding: 1rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 970px) {
+  #circularity-page {
+    #part1-circular {
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns: 1fr;
+      margin-bottom: 2rem;
+      #intro-services {
+        padding: 0 0 10px 10px;
+      }
+      #icons-circular {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        img {
+          width: 12rem;
+          height: 12rem;
+          padding: 0.3rem;
+        }
       }
     }
   }
