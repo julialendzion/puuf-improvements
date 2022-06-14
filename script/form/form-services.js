@@ -18,15 +18,13 @@ const handleSubmit = (e) => {
       document.querySelector("button[id=button-submit]").disabled = false;
       document.querySelector("input[id=name]").value = "";
       document.querySelector("input[id=email]").value = "";
-      document.querySelector("textarea[id=message]").value = "";
+      document.querySelector("input[type=radio]").checked = false;
       document.querySelector("input[type=checkbox]").checked = false;
       document.querySelector("#confirmation-text").classList.remove("hidden");
       setTimeout(removeMessege, 7000);
     })
     .catch((error) => alert(error));
 };
-
-form.addEventListener("submit", handleSubmit);
 
 function removeMessege() {
   document.querySelector("#confirmation-text").classList.add("hidden");
@@ -42,6 +40,10 @@ function showTextField() {
 }
 
 function hideTextField() {
+  document.getElementById("messageRepair").required = true;
   document.getElementById("customOrderField").style.display = "none";
   document.querySelector("#RepairSection").classList.remove("hidden");
+  // document.getElementById("customOrder").checked = true;
 }
+
+form.addEventListener("submit", handleSubmit);
