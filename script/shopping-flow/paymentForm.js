@@ -20,6 +20,8 @@ const handleSubmit = (e) => {
     .catch((error) => alert(error));
 };
 
+let radio = document.querySelector('input[type="radio"]');
+
 document.querySelector("#cardMethod").addEventListener("click", radioCheck);
 
 function radioCheck() {
