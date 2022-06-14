@@ -76,7 +76,7 @@ function handleProducts(products) {
 
   function cartClick() {
     cartButton.classList.add("clicked");
-    document.querySelector(".cartNav").classList.add("items");
+    document.querySelector(".cartNav").classList.add("activeCart");
   }
 
   document.querySelector(".cart-button span.added").addEventListener("animationend", restartButton);
