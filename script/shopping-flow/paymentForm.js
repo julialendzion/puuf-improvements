@@ -20,32 +20,57 @@ const handleSubmit = (e) => {
     .catch((error) => alert(error));
 };
 
-let radio = document.querySelector('input[type="radio"]');
-
-document.querySelector("#cardMethod").addEventListener("click", radioCheck);
-
-function radioCheck() {
-  document.getElementById("cardNumber").required = radio.checked;
-  document.getElementById("month").required = radio.checked;
-  document.getElementById("year").required = radio.checked;
-  document.getElementById("nameCard").required = radio.checked;
-  document.getElementById("CVV").required = radio.checked;
-}
-form.addEventListener("submit", handleSubmit);
-
+let radio = document.querySelector('label[for="cardMethod"]');
 document.getElementById("cardSection").style.display = "none";
 
-document.querySelector("#cardMethod").addEventListener("click", show);
-document.querySelector("#mobilepayMethod").addEventListener("click", show1);
-document.querySelector("#paypayMethod").addEventListener("click", show1);
+if ((radio.checked = true)) {
+  document.querySelector("#cardMethod").addEventListener("click", show);
+  document.querySelector("#mobilepayMethod").addEventListener("click", show1);
 
-function show() {
-  document.getElementById("cardSection").style.display = "block";
+  function show() {
+    document.getElementById("cardSection").style.display = "block";
+  }
+
+  function show1() {
+    document.getElementById("cardSection").style.display = "none";
+  }
+  document.querySelector("#cardMethod").addEventListener("click", radioCheck);
+
+  function radioCheck() {
+    document.getElementById("cardNumber").required = true;
+    document.getElementById("month").required = true;
+    document.getElementById("year").required = true;
+    document.getElementById("nameCard").required = true;
+    document.getElementById("CVV").required = true;
+  }
 }
 
-function show1() {
-  document.getElementById("cardSection").style.display = "none";
-}
+form.addEventListener("submit", handleSubmit);
+
+// document.querySelector("#cardMethod").addEventListener("click", radioCheck);
+
+// function radioCheck() {
+//   document.getElementById("cardNumber").required = true;
+//   document.getElementById("month").required = true;
+//   document.getElementById("year").required = true;
+//   document.getElementById("nameCard").required = true;
+//   document.getElementById("CVV").required = true;
+// }
+
+// form.addEventListener("submit", handleSubmit);
+
+// document.getElementById("cardSection").style.display = "none";
+// document.querySelector("#cardMethod").addEventListener("click", show);
+// document.querySelector("#mobilepayMethod").addEventListener("click", show1);
+// document.querySelector("#paypayMethod").addEventListener("click", show1);
+
+// function show() {
+//   document.getElementById("cardSection").style.display = "block";
+// }
+
+// function show1() {
+//   document.getElementById("cardSection").style.display = "none";
+// }
 
 // function removeMessege() {
 //   document.querySelector("#confirmation-text").classList.add("hidden");
