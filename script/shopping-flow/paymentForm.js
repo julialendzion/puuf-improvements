@@ -43,36 +43,12 @@ if ((radio.checked = true)) {
     document.getElementById("nameCard").required = true;
     document.getElementById("CVV").required = true;
   }
+} else {
+  document.getElementById("cardNumber").required = false;
+  document.getElementById("month").required = false;
+  document.getElementById("year").required = false;
+  document.getElementById("nameCard").required = false;
+  document.getElementById("CVV").required = false;
 }
 
 form.addEventListener("submit", handleSubmit);
-
-// document.querySelector("#cardMethod").addEventListener("click", radioCheck);
-
-// function radioCheck() {
-//   document.getElementById("cardNumber").required = true;
-//   document.getElementById("month").required = true;
-//   document.getElementById("year").required = true;
-//   document.getElementById("nameCard").required = true;
-//   document.getElementById("CVV").required = true;
-// }
-
-// form.addEventListener("submit", handleSubmit);
-
-// document.getElementById("cardSection").style.display = "none";
-// document.querySelector("#cardMethod").addEventListener("click", show);
-// document.querySelector("#mobilepayMethod").addEventListener("click", show1);
-// document.querySelector("#paypayMethod").addEventListener("click", show1);
-
-// function show() {
-//   document.getElementById("cardSection").style.display = "block";
-// }
-
-// function show1() {
-//   document.getElementById("cardSection").style.display = "none";
-// }
-
-// function removeMessege() {
-//   document.querySelector("#confirmation-text").classList.add("hidden");
-// }
-// do
