@@ -39,7 +39,18 @@
       input:invalid:not(:placeholder-shown, :focus) {
         border: dashed 1px red;
       }
+      .fa-circle-xmark {
+        display: none;
+      }
+      input:invalid:not(:placeholder-shown, :focus) ~ .fa-circle-xmark {
+        display: inline-block;
+        color: red;
+      }
 
+      // select:invalid:not(:selected, :focus) {
+      //   color: red;
+      //   border: dashed 1px red;
+      // }
       .error,
       .error-card,
       .error-cvv {

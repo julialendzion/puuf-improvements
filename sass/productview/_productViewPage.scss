@@ -154,6 +154,7 @@
     .list {
       padding: 0.5rem 0;
       margin-left: -1rem;
+      font-weight: 200;
     }
   }
 
@@ -229,6 +230,13 @@
         padding: 0.2rem 0;
         margin: 0 1rem;
 
+        .dropdown-list {
+          p {
+            font-size: 2rem;
+            font-weight: 200;
+          }
+        }
+
         h2 {
           padding: 1rem 0;
           margin: 0;
@@ -251,10 +259,6 @@
           hr {
             width: 15rem;
           }
-        }
-
-        .dropdown {
-          margin-bottom: 2rem;
         }
 
         hr {
@@ -300,6 +304,13 @@
         width: 30rem;
         // font-size: 14px;
 
+        .dropdown-list {
+          p {
+            font-size: 1.3rem;
+            font-weight: 200;
+          }
+        }
+
         .hide {
           display: block;
           font-size: 3rem;
@@ -311,9 +322,9 @@
             padding: 0;
           }
         }
-        .dropdown > .dropdownList:hover .list3 {
-          height: 100px;
-        }
+        // .dropdown > .dropdownList:hover .list3 {
+        //   height: 100px;
+        // }
 
         hr {
           width: 20rem;
@@ -342,8 +353,11 @@
         hr {
           width: 27rem;
         }
-        .dropdown > .dropdownList:hover .list3 {
-          height: 100px;
+        .dropdown-list {
+          p {
+            font-size: 1.3rem;
+            font-weight: 200;
+          }
         }
       }
 
